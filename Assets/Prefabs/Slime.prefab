@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 8893415536886285401}
   - component: {fileID: 5360969461070772701}
   - component: {fileID: 1367093664278776030}
+  - component: {fileID: 6100726722990242455}
+  - component: {fileID: 5775674127213264819}
+  - component: {fileID: 5596874159144850487}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -35,7 +38,7 @@ Transform:
   m_Children:
   - {fileID: 1548351052286712141}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4139089146600456248
 SpriteRenderer:
@@ -176,6 +179,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!114 &6100726722990242455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863737631879045067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8705c5da78673174686e0f9ee7e505ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+--- !u!114 &5775674127213264819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863737631879045067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d733c2cd4eaa842bf418820f4cbf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &5596874159144850487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863737631879045067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da5e8dd451555f4c8133eefc86daeb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: fd82c870eb77110438e164c396aed3f5, type: 2}
+  restoreDefaultMatTime: 0.1
 --- !u!1 &8306201224008064973
 GameObject:
   m_ObjectHideFlags: 0

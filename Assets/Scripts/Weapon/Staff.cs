@@ -9,7 +9,7 @@ public class Staff : MonoBehaviour, IWeapon
     [SerializeField] private Transform magicLaserSpawnPoint;
 
     private Animator anim;
-    readonly int AttackHash = Animator.StringToHash("Attack");
+    readonly int ATTACK_HASH = Animator.StringToHash("Attack");
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class Staff : MonoBehaviour, IWeapon
 
     public void Attack()
     {
-        anim.SetTrigger(AttackHash);
+        anim.SetTrigger(ATTACK_HASH);
     }
 
     public WeaponInfo GetWeaponInfo()
